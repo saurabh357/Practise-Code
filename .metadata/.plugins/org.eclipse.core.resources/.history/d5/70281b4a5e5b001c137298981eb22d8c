@@ -1,0 +1,28 @@
+package HackerRank;
+
+import java.util.*;u
+
+public class dayOfProgrammer {
+
+	public static String dayOfProgrammer(int year) {
+	    int mainDay = 256;
+	    int leapFeb = 29;
+	    int NotLeapFeb = 28;
+	    for(int i=0;i<8;i=i+30){
+	        if(year % 4 == 0){
+	              int total += 
+	        }
+	        else{
+	            
+	            }
+	        }
+	    return "";
+	    }
+
+	public static void main(String[] args) {
+
+		int year = 2017;
+		System.out.println(dayOfProgrammer(year));
+	}
+
+}

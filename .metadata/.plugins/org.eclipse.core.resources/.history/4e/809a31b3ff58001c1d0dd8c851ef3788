@@ -1,0 +1,10 @@
+package Binarytree;
+
+public class BinaryTreeUsingLinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

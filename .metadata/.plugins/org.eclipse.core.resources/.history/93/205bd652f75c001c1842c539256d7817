@@ -1,0 +1,26 @@
+package HackerRank;
+
+public class getMoneySpent {
+
+	static int getMoneySpent(int[] keyboards, int[] drives, int b) {
+		int n = keyboards.length, m = drives.length;
+
+		if(n==m) {
+			if(keyboards[0]+drives[0] > b) {
+				return -1;	
+			}
+		}
+		return 9;
+
+	}
+
+	public static void main(String[] args) {
+
+		int[] keyboards = {4};
+		int[] drives = {5};
+		int b = 5;
+		
+		System.out.println(getMoneySpent(keyboards,drives,b));
+	}
+
+}

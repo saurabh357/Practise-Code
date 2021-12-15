@@ -1,0 +1,34 @@
+package HackerRank;
+
+import java.util.Arrays;
+
+public class CountingValleys {
+
+	public static int countingValleys(int steps, String path) {
+		int count=0;
+		int ans = 0;
+		char[] arr = path.toCharArray();
+		int[] temp = new int[arr.length];
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] == 'U') {
+				count++;
+				temp[i] = count++;
+			}
+			else {
+				count--;
+				temp[i] = count--;
+			}
+		}
+		System.out.println(Arrays.toString(temp));
+		
+		return count;
+	}
+
+	public static void main(String[] args) {
+		int steps = 8;
+		String path = "UDDDUDUU";
+		System.out.println(countingValleys(steps, path));
+
+	}
+
+}

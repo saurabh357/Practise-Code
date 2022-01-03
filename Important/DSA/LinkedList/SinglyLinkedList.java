@@ -130,3 +130,51 @@ public class SinglyLinkedList {
 	}
 
 }
+
+
+class Node{
+	int data;
+	Node next;
+	Node(int data){
+		this.data = data;
+		this.next = null;
+	}
+}
+Node head = null;
+Node tail = null;
+
+public void insert(int data) {
+	Node n = new Node(data);
+	if(head==null) {
+		head = n;
+		tail = n;
+	}
+	else {
+		tail.next = n;
+		tail = n;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

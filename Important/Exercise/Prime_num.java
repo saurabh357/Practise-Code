@@ -1,21 +1,29 @@
-// Write a program to find all prime numbers between 99 & 499.
 
+import java.util.*;
 
 public class Prime_num {
-	public static void main(String[] args) {
-		int start = 99, end = 499;
-		while (start < end) {
-			boolean flag = false;
-			for (int i = 2; i <= start / 2; ++i) {
-				if (start % i == 0) {
-					flag = true;
-					break;
-				}
-			}
-			if (!flag && start != 0 && start != 1)
-				System.out.print(start + " ");
-			++start;
+	public static int search(int[] arr,int left,int right,int val) {
+		if(left>right) {
+			return -1;
 		}
+		int mid = (left+right)/2;
+		if(val==arr[mid]) {
+			return mid;
+		}
+		if(val>arr[mid]) {
+			return search(arr,mid+1,right,val);
+		}
+		return search(arr,left,mid-1,val);
+		
 	}
+	public static void main(String[] args) {
 
+		int[] arr = {-4,-1,3,7,21,11};
+		 int val = 21;
+		 int left = 0,right = arr.length-1;
+		 
+		 System.out.println(search(arr,left,right,val));
+		
+		 
+	}
 }

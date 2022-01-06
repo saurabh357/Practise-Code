@@ -1,28 +1,28 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 
-public class Sequential_digits {
+// public class Sequential_digits {
 
-	public static void main(String[] args) {
-		int low =100; int high = 300;
+// 	public static void main(String[] args) {
+// 		int low =100; int high = 300;
 		
-		String[] temp = new String[3];
-		String digits = "123456789";
-		for(int i=1;i<=9;i++) {
-			for(int j=0;j<(digits.length()-i);j++) {
-				String sub = digits.substring(j,i+j);
-				int val = parseInt(sub);
-				if(val>=low && val<=high) {
-					temp[j] = val;
-				}
+// 		String[] temp = new String[3];
+// 		String digits = "123456789";
+// 		for(int i=1;i<=9;i++) {
+// 			for(int j=0;j<(digits.length()-i);j++) {
+// 				String sub = digits.substring(j,i+j);
+// 				int val = parseInt(sub);
+// 				if(val>=low && val<=high) {
+// 					temp[j] = 1;
+// 				}
 				
-			}
-			System.out.println(Arrays.toString(temp));
-		}
-	}
+// 			}
+// 			System.out.println(Arrays.toString(temp));
+// 		}
+// 	}
 
-	private static int parseInt(String sub) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+// 	private static int parseInt(String sub) {
+// 		// TODO Auto-generated method stub
+// 		return 0;
+// 	}
 
-}
+// }

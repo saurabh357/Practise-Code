@@ -63,7 +63,7 @@ public class QueueUsingLinkedList {
 		list.enQueue(4);
 		list.enQueue(6);
 		list.enQueue(2);
-//		list.print();
+		list.print();
 		list.deQueue();
 		list.deQueue();
 		list.print();

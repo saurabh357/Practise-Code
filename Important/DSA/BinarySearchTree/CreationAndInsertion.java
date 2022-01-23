@@ -142,7 +142,7 @@ public class CreationAndInsertion {
 			root.left = deleteNode(root.left, data);
 		} else {
 			if (root.left != null && root.right != null) {
-				Node temp = root;
+				//Node temp = root;
 				Node min = minNode(root.right);
 				root.data = min.data;
 				root.right = deleteNode(root.right, min.data);

@@ -69,9 +69,9 @@ public class QueueUsingLinearArray {
 		queue.enqueue(3);
 		queue.enqueue(2);
 		queue.enqueue(1);
-		queue.deleteQueue();
-		queue.dequeue();
-		queue.peek();
-
+		//queue.deleteQueue();
+//		queue.dequeue();
+//		queue.peek();
+		queue.print();
 	}
 }

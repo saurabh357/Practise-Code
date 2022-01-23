@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.Stack;
+
 
 public class SinglyLinkedList {
 
@@ -28,13 +29,20 @@ public class SinglyLinkedList {
 //			size++;
 //		}
 //	}
+	boolean isCircular() {
+		boolean b = false;
+		if(tail.next == head) {
+			b = true;
+		}
+		return b;
+	}
 	public void addAtHead(int data) {
 		Node n = new Node(data);
 		if (size == 0) {
 			head = tail = n;
 		} else {
-			n.next = head;
-			head = n;
+			tail.next = n;
+			tail = n;
 		}
 		size++;
 	}
@@ -65,6 +73,18 @@ public class SinglyLinkedList {
 			prev.next = n;
 		}
 		size++;
+	}
+	public int count() {
+		int c = 0;
+		if(head==null) {
+			return 0;
+		}
+		Node curr = head;
+		while(curr!=null) {
+			c++;
+			curr=curr.next;
+		}
+		return c;
 	}
 
 	public void print() {
@@ -116,44 +136,32 @@ public class SinglyLinkedList {
 		}
 		return -1;
 	}
-
+	
 	public static void main(String[] args) {
 		SinglyLinkedList list = new SinglyLinkedList();
 		list.addAtHead(5);
 		list.addAtHead(4);
 		list.addAtHead(3);
 		list.addAtHead(2);
+		list.addAtHead(7);
+		list.addAtHead(6);
 		list.addAtTail(6);
 		list.addAtIndex(6, 3);
 		list.print();
 		System.out.println(list.search(50));
+		
+		
+		
+		System.out.println();
+		System.out.println(list.count());
+
+		System.out.println(list.isCircular());
+		//System.out.println(list.sum(2));
 	}
 
 }
 
 
-class Node{
-	int data;
-	Node next;
-	Node(int data){
-		this.data = data;
-		this.next = null;
-	}
-}
-Node head = null;
-Node tail = null;
-
-public void insert(int data) {
-	Node n = new Node(data);
-	if(head==null) {
-		head = n;
-		tail = n;
-	}
-	else {
-		tail.next = n;
-		tail = n;
-	}
-}
 
 
 

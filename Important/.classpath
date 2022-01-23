@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="Exercise"/>
-	<classpathentry excluding="Binarytree/|BinaryTree/|BinaryTree/" kind="src" path="DSA"/>
+	<classpathentry excluding="Binarytree/|BinaryTree/|BinaryTree/|LinkedList/" kind="src" path="DSA"/>
 	<classpathentry kind="src" path="HR/HackerRank"/>
 	<classpathentry kind="src" path="DSA/BinaryTree"/>
+	<classpathentry kind="src" path="DSA/LinkedList"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

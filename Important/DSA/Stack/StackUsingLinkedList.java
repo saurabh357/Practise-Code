@@ -41,21 +41,7 @@ public class StackUsingLinkedList {
 		size--;
 	}
 
-	public boolean isEmpty() {
-		if (head == null) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public void peek() {
-		if (head == null) {
-			System.out.println("Empty Stack ");
-		} else {
-			System.out.println(head.data);
-		}
-	}
+	
 
 	public static void main(String[] args) {
 
@@ -65,8 +51,6 @@ public class StackUsingLinkedList {
 		stack.push(57);
 		// System.out.println(size);
 		stack.pop();
-		stack.peek();
-		System.out.println(stack.isEmpty());
 
 	}
 }

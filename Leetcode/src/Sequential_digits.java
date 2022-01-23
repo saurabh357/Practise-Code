@@ -1,6 +1,6 @@
-// import java.util.Arrays;
+ import java.util.Arrays;
 
-// public class Sequential_digits {
+ public class Sequential_digits {
 
 // 	public static void main(String[] args) {
 // 		int low =100; int high = 300;
@@ -18,11 +18,7 @@
 // 			}
 // 			System.out.println(Arrays.toString(temp));
 // 		}
-// 	}
+	}
 
-// 	private static int parseInt(String sub) {
-// 		// TODO Auto-generated method stub
-// 		return 0;
-// 	}
 
 // }

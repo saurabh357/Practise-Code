@@ -1,4 +1,4 @@
-package LinkedList;
+
 
 public class MyDoublyLinkedList {
 
@@ -27,7 +27,7 @@ public class MyDoublyLinkedList {
 
 		if (size == 0) {
 			head = newNode;
-			tail = head;
+			tail = newNode;
 		} else {
 			// rearrange the pointers
 			newNode.prev = tail;
@@ -151,6 +151,20 @@ public class MyDoublyLinkedList {
 		}
 		size++;
 	}
+	public int reverseDLL() {
+		Node temp = null;
+	    Node c = head;
+	    while(c.next!=null){
+	        temp=c.next;
+	        c=c.next;
+	    }
+	    while(temp.prev!=null){
+	    	System.out.print(temp.data+" ");
+	        temp=temp.prev;
+	    }
+	    
+	    return temp.data;
+	}
 
 	public static void main(String[] args) {
 		MyDoublyLinkedList linkedList = new MyDoublyLinkedList();
@@ -162,6 +176,9 @@ public class MyDoublyLinkedList {
 		linkedList.addAtTail(5);
 		linkedList.addAtTail(6);
 
+		linkedList.print();
+		System.out.println(linkedList.reverseDLL());
+		System.out.println();
 		linkedList.print();
 	}
 

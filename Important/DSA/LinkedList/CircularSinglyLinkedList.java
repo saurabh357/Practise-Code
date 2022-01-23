@@ -1,4 +1,4 @@
-package LinkedList;
+
 
 public class CircularSinglyLinkedList {
 
@@ -30,6 +30,13 @@ public class CircularSinglyLinkedList {
 		size++;
 	}
 
+	boolean isCircular() {
+		boolean b = false;
+		if(tail.next == head) {
+			b = true;
+		}
+		return b;
+	}
 	public void print() {
 		Node current = head.next;
 		if (head == null) {
@@ -128,6 +135,7 @@ public class CircularSinglyLinkedList {
 		list.addAtTail(10);
 		list.addAtIndex(12, 5);
 		list.print();
+		System.out.println(list.isCircular());
 		// System.out.println(list.search(6));
 	}
 }

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="count"/>
+		<item key="selection" value="getNode"/>
 		<list key="findhistory">
+			<item value="getNode"/>
 			<item value="count"/>
 			<item value="import org.jsoup.Jsoup;"/>
 		</list>
